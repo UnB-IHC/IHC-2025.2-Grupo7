@@ -737,5 +737,5 @@ export async function validateKey(apiKey: string) {
         else return false;
     } catch (err) {
         throw err;
-    }x'
+    }
 }
