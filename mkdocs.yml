@@ -1,41 +1,59 @@
-repo_url: https://github.com/vitorfleonardo/VerificAAA
-repo_name: VerificAAA
-
-site_url: https://github.com/vitorfleonardo/VerificAAA
-site_name: VerificAAA
-
-use_directory_urls: False
-
-nav:
-  - Início - VerificAAA: 'index.md'
-
-  - Desenvolvimento Web:
-    - Desenvolvimento: 'devWeb/non_text_content.md'
-
-  - Design:
-    - Design: 'design/design.md'
-  
-  - Geração de Conteúdo:
-    - Conteúdo: 'geracaoConteudo/conteudo.md'
-
-  - Gestão de Projetos:
-    - Gestão de Projetos: 'gestaoProjeto/gestaoProjeto.md'
-
-  - Ferramentas:
-    - Ferramentas de Acessibilidade: 'tools/ferramentas.md'
+site_name: Grupo 07
+docs_dir: ./docs
+repo_url: https://github.com/UnB-IHC/IHC-2025.2-Grupo7
+repo_name: IHC-2025.2-Grupo7
 
 theme:
-  name: readthedocs
-  locale: pt_BR
-  titles_only: true
-  logo: imagens/logo-verificaaa.png
-  favicon: imagens/logo-verificaaa.png
+  name: material
+  language: pt-BR
+  logo: assets/logo_oseb.svg
+  favicon: assets/logo_oseb.svg
+  palette:
+    # Paleta para modo claro
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: light blue
+      toggle:
+        icon: material/weather-sunny
+        name: Mudar para modo escuro
+    # Paleta para modo escuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: light blue
+      toggle:
+        icon: material/weather-night
+        name: Mudar para modo claro
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - toc.follow
+    - navigation.top
+    - content.code.copy
+    - content.action.edit
+    - header.autohide
+    - navigation.footer
+    - search.highlight
+    - search.share
+    - search.suggest
 
 markdown_extensions:
-  - def_list
-  - pymdownx.tasklist:
-      custom_checkbox: false
-      clickable_checkbox: true
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
-extra_css:
-  - stylesheets/extra.css
+nav:
+  - Home: index.md
+  - Integrantes: integrantes.md
+  - Projeto IHC:
+    - Ferramentas e Referências: projeto/ferramentas.md
+    - Site Melhorado: projeto/site-melhorado.md
