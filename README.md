@@ -6,10 +6,10 @@
 
 
 ## Introdução
-O projeto aplica os conceitos de Interação Humano-Computador (IHC) com foco em acessibilidade web, desenvolvendo uma ferramenta que avalia a acessibilidade de sites a partir do HTML e de imagens. A aplicação utiliza IA generativa (Google Gemini) para automatizar as análises e gerar relatórios, consolidando o aprendizado com base no conteúdo ministrado pela professora Rejane Figueiredo, na Universidade de Brasília (UnB).
+O projeto aplica os conceitos de Interação Humano-Computador (IHC) com foco em acessibilidade web, desenvolvendo uma ferramenta que avalia a acessibilidade de sites a partir do HTML e de imagens. O pocket funciona como fonte de conhecimento para a IA: ele contém os sumários de WCAG, NBR e do Guia de Boas Práticas para Acessibilidade Digital, elaborados pelo Grupo 7 a partir dos materiais disponibilizados pela professora Rejane Figueiredo. Com base nesse pocket, a IA realiza a análise e gera automaticamente um relatório de acessibilidade.
 
 ## Sobre a Ferramenta 
-A aplicação utiliza IA generativa (Google Gemini) para automatizar a avaliação de acessibilidade de sites, a partir da análise de HTML ou imagens. Essa análise é realizada com base no checklist elaborado pelo Grupo Feijó e, principalmente, nos sumários de WCAG, NBR e do Guia de Boas Práticas para Acessibilidade Digital. Esses sumários foram produzidos pelo Grupo 7 a partir dos conteúdos e materiais disponibilizados pela professora Rejane Figueiredo.
+A aplicação utiliza IA generativa (Google Gemini) para automatizar a avaliação de acessibilidade de sites, a partir da análise de HTML ou imagens. Essa análise é realizada a partir do nosso pocket que foi feito com base nos sumários de WCAG, NBR e do Guia de Boas Práticas para Acessibilidade Digital. Esses sumários foram produzidos pelo Grupo 7 a partir dos conteúdos e materiais disponibilizados pela professora Rejane Figueiredo.
 
 As principais funcionalidades incluem:
 
