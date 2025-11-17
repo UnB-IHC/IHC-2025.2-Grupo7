@@ -902,3 +902,19 @@
     const text = response.candidates?.[0]?.content?.parts?.[0]?.text;
     return text ? text : ""; 
   }
+
+export async function validateKey(apiKey: string) {
+  try {
+      const ai = new GoogleGenAI({ apiKey: apiKey });
+      const response = await ai.models.generateContent({
+      model: "gemini-2.0-flash",
+      contents: "Retorne somente true e apenas sem nenhuma mensagem a mais apenas true.",
+      });
+
+      const text = response.candidates?.[0]?.content?.parts?.[0]?.text;
+      if(text === "true") return true;
+      else return false;
+  } catch (err) {
+      throw err;
+  }
+}
