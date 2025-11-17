@@ -3,24 +3,24 @@
 ## Membros da Equipe
 
 ### Integrante 1
-- **Nome:** [Nome do integrante]
-- **Matrícula:** [Matrícula]
-- **Função:** [Função no projeto]
+- **Nome:** [Ana Carolina](https://github.com/anawcarol)
+- **Matrícula:** [221031102]
 
 ### Integrante 2
-- **Nome:** [Nome do integrante]
-- **Matrícula:** [Matrícula]
-- **Função:** [Função no projeto]
+- **Nome:** [Brenda Beatriz](https://github.com/Brwnds)
+- **Matrícula:** [231011963]
 
 ### Integrante 3
-- **Nome:** [Nome do integrante]
-- **Matrícula:** [Matrícula]
-- **Função:** [Função no projeto]
+- **Nome:** [Geovanna Umbelino](https://github.com/GeovannaUmbelino)
+- **Matrícula:** [232014450]
 
 ### Integrante 4
-- **Nome:** [Nome do integrante]
-- **Matrícula:** [Matrícula]
-- **Função:** [Função no projeto]
+- **Nome:** [Guilherme Flyan](https://github.com/GFlyan)
+- **Matrícula:** [231011408]
+
+### Integrante 5
+- **Nome:** [João Carlos Lobo](https://github.com/joaolobo10)
+- **Matrícula:** [221031102]
 
 ## O que Fizemos
 
@@ -37,4 +37,5 @@
 - Avaliação heurística
 - Testes de acessibilidade
 - Aplicação de normas e diretrizes
+
 - Prototipação e implementação
