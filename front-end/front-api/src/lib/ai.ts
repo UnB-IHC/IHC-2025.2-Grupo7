@@ -444,6 +444,7 @@ Textos ampliáveis até 200% sem distorção ou perda de funcionalidade?
   }
 
 export async function htmlAnalysis(url: string) {
+  //const ai = new GoogleGenAI({ apiKey: "AIzaSyDNKl4krc3qNVKsxodUaOR9nRMo4kKiIqc" });
   let html;
   try {
     const agent = new https.Agent({ rejectUnauthorized: false });
@@ -884,6 +885,7 @@ Textos ampliáveis até 200% sem distorção ou perda de funcionalidade?
 
 
 export async function imageAnalysis(imagemBase64: string): Promise<string> {
+  //const ai = new GoogleGenAI({ apiKey: "AIzaSyDNKl4krc3qNVKsxodUaOR9nRMo4kKiIqc" });
   const response = await ai.models.generateContent({
     model: "gemini-2.0-flash",
     contents: [
@@ -921,10 +923,6 @@ try {
     throw err;
 }
 }
-
-
-
-
 
 export async function markdownToPdf(markdown: string, outFile: string) {
   // 1. Markdown -> HTML
