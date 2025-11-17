@@ -1,5 +1,5 @@
-import { htmlAnalysis, imageAnalysis } from "@/lib/ai";
-import Page from "@/components/Page";
+import { htmlAnalysis, imageAnalysis } from "../../lib/ai";
+import Page from "../../components/Page";
 
 export default function Home() {
   async function handleSubmit(formData: FormData) : Promise<string> {
@@ -18,7 +18,7 @@ export default function Home() {
 
 
   return (
-    <div className="h-screen w-full bg-black text-white flex flex-col items-center justify-center gap-4 p-6">
+    <div className="h-full w-full bg-black text-white flex flex-col items-center justify-center gap-4 p-6">
       <Page actionHTML={handleSubmit} actionImage={handleImage} />
     </div>
   );
