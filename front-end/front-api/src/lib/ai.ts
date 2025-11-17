@@ -7,7 +7,7 @@
   import puppeteer from "puppeteer";
   import fs from "fs";
 
-  const ai = new GoogleGenAI({ apiKey: "" });
+  const ai = new GoogleGenAI({ apiKey: "AIzaSyCtMzSyK6MnhQ1QUnNQqJQODxvl3rmCNgg" });
 
   const sumarioHTML = `
   Analise o seguinte HTML em relação ao sumário de acessibilidade fornecido, considerando as diretrizes da WCAG 2.2, a norma ABNT NBR 17225:2025, os guias de acessibilidade do Reino Unido e Brasil e também Heurísticas de Nielsen. Foque apenas nos pontos que podem ser melhorados, sem listar os acertos ou pontos fortes. A análise deve ser prática e detalhada, apontando problemas, riscos de não conformidade e sugestões de ajustes ou correções.
@@ -444,7 +444,7 @@ Textos ampliáveis até 200% sem distorção ou perda de funcionalidade?
   }
 
 export async function htmlAnalysis(url: string) {
-  //const ai = new GoogleGenAI({ apiKey: "" });
+  //const ai = new GoogleGenAI({ apiKey: "AIzaSyDNKl4krc3qNVKsxodUaOR9nRMo4kKiIqc" });
   let html;
   try {
     const agent = new https.Agent({ rejectUnauthorized: false });
@@ -885,7 +885,7 @@ Textos ampliáveis até 200% sem distorção ou perda de funcionalidade?
 
 
 export async function imageAnalysis(imagemBase64: string): Promise<string> {
-  //const ai = new GoogleGenAI({ apiKey: "" });
+  //const ai = new GoogleGenAI({ apiKey: "AIzaSyDNKl4krc3qNVKsxodUaOR9nRMo4kKiIqc" });
   const response = await ai.models.generateContent({
     model: "gemini-2.0-flash",
     contents: [

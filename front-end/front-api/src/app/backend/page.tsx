@@ -18,7 +18,7 @@ export default function Home() {
 
 
   return (
-    <div className="h-full w-full bg-black text-white flex flex-col items-center justify-center gap-4 p-6">
+    <div className="h-screen flex items-center justify-center bg-gray-100">
       <Page actionHTML={handleSubmit} actionImage={handleImage} />
     </div>
   );
