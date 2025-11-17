@@ -29,6 +29,24 @@ export default function Page({ actionHTML, actionImage }: FormProps) {
     }
   };
 
+  const handleClick = () => {
+    async function downloadPDF(markdown: string) {
+      const res = await fetch("/api", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ markdown }),
+      });
+
+      const blob = await res.blob();
+      const url = URL.createObjectURL(blob);
+
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "meu-pdf.pdf";
+      a.click();
+    }
+    downloadPDF(resultado);
+  }
   return (
     <div className="h-full w-full bg-black text-white flex flex-col items-center justify-center gap-4 p-6">
         <div className="flex gap-1.5">
@@ -72,7 +90,10 @@ export default function Page({ actionHTML, actionImage }: FormProps) {
         )}
         
         {resultado && (
-            <MarkdownView content={resultado}/>
+            <>
+              <MarkdownView content={resultado}/>
+              <button onClick={handleClick} className="h-20 w-20 bg-purple-800">BAIXAKI</button>
+            </>
         )}
     </div>
   );
