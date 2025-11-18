@@ -3,7 +3,7 @@
 ## Website Analisado e Melhorado
 
 ### Link do Site Original
-- **URL:** [https://observatorio.aeb.gov.br/]
+- **URL:** [https://observatorio.aeb.gov.br/](https://observatorio.aeb.gov.br/)
 - **Descrição:** O Observatório do Setor Espacial Brasileiro é uma iniciativa dedicada a reunir, organizar e divulgar informações estratégicas sobre as atividades espaciais no Brasil. Seu objetivo é promover transparência, acesso ao conhecimento e apoio à tomada de decisões no setor, por meio de dados atualizados, indicadores, análises e conteúdos técnicos. A plataforma oferece uma visão ampla sobre programas, projetos, investimentos, políticas públicas, inovação e desenvolvimento tecnológico relacionados ao setor espacial brasileiro. Ao facilitar o acesso a essas informações, o Observatório contribui para o fortalecimento da pesquisa, da educação, da indústria e da governança espacial no país.
 
 ### Link do Site Melhorado
@@ -57,7 +57,6 @@ Essas tecnologias, combinadas, contribuíram para tornar o site mais eficiente, 
 ## Aspectos Melhorados
 
 ### Acessibilidade
-- Navegação por teclado
 - Textos alternativos para imagens
 - Contraste de cores
 - Estrutura semântica do HTML
@@ -80,3 +79,4 @@ Essas tecnologias, combinadas, contribuíram para tornar o site mais eficiente, 
 <a id="FRM1" href="#anchor_1">1.</a> W3C. Web Content Accessibility Guidelines (WCAG) 2.2. Disponível em: https://www.w3.org/TR/WCAG22/. Acesso em: 17 Nov. 2025.
 
 <a id="FRM1" href="#anchor_1">2.</a> ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. NBR 17225: Acessibilidade para conteúdo web. Rio de Janeiro: ABNT, 2025.
+
