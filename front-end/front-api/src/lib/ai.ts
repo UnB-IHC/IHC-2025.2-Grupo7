@@ -5,9 +5,8 @@
   import https from "https";
   import { marked } from "marked";
   import puppeteer from "puppeteer";
-  import fs from "fs";
 
-  const ai = new GoogleGenAI({ apiKey: "AIzaSyCtMzSyK6MnhQ1QUnNQqJQODxvl3rmCNgg" });
+  const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY!, });
 
   const sumarioHTML = `
   Analise o seguinte HTML em relação ao sumário de acessibilidade fornecido, considerando as diretrizes da WCAG 2.2, a norma ABNT NBR 17225:2025, os guias de acessibilidade do Reino Unido e Brasil e também Heurísticas de Nielsen. Foque apenas nos pontos que podem ser melhorados, sem listar os acertos ou pontos fortes. A análise deve ser prática e detalhada, apontando problemas, riscos de não conformidade e sugestões de ajustes ou correções.
@@ -414,37 +413,7 @@ Textos ampliáveis até 200% sem distorção ou perda de funcionalidade?
 
   `;
 
-  async function fetchAndCountTokens(url: string) {
-    let html;  
-    try {
-      const agent = new https.Agent({ rejectUnauthorized: false });
-      const { data } = await axios.get(url, {
-        httpsAgent: agent,
-        headers: {
-          "User-Agent": "Mozilla/5.0",
-          "Accept": "text/html",
-        }
-      });
-      html = data;
-    } catch (error) {
-      return error;
-    } finally { 
-      try {
-        
-        const countTokensResponse = await ai.models.countTokens({
-          model: "gemini-2.0-flash",
-          contents: sumarioHTML + html,
-        });
-
-        console.log("Quantidade de tokens: " + countTokensResponse.totalTokens);
-      } catch (err) {
-        console.error(err);
-      }
-    }
-  }
-
 export async function htmlAnalysis(url: string) {
-  //const ai = new GoogleGenAI({ apiKey: "AIzaSyDNKl4krc3qNVKsxodUaOR9nRMo4kKiIqc" });
   let html;
   try {
     const agent = new https.Agent({ rejectUnauthorized: false });
@@ -474,9 +443,6 @@ export async function htmlAnalysis(url: string) {
   }
 }
   
-
-//console.log(await htmlAnalysis("https://observatorio.aeb.gov.br/"));
-
 const sumarioIMG = `
   Analise a seguinte imagem em relação ao sumário de acessibilidade fornecido, considerando as diretrizes da WCAG 2.2, a norma ABNT NBR 17225:2025, os guias de acessibilidade do Reino Unido e Brasil e também Heurísticas de Nielsen. Foque apenas nos pontos que podem ser melhorados, sem listar os acertos ou pontos fortes. A análise deve ser prática e detalhada, apontando problemas, riscos de não conformidade e sugestões de ajustes ou correções.
 
@@ -885,7 +851,6 @@ Textos ampliáveis até 200% sem distorção ou perda de funcionalidade?
 
 
 export async function imageAnalysis(imagemBase64: string): Promise<string> {
-  //const ai = new GoogleGenAI({ apiKey: "AIzaSyDNKl4krc3qNVKsxodUaOR9nRMo4kKiIqc" });
   const response = await ai.models.generateContent({
     model: "gemini-2.0-flash",
     contents: [
@@ -895,8 +860,8 @@ export async function imageAnalysis(imagemBase64: string): Promise<string> {
           { text: sumarioIMG },
           {
             inlineData: {
-              mimeType: "image/png", // ou image/jpeg dependendo do arquivo
-              data: imagemBase64, // base64 sem o prefixo data:image/png;base64,
+              mimeType: "image/png", 
+              data: imagemBase64, 
             },
           },
         ],
@@ -908,27 +873,11 @@ export async function imageAnalysis(imagemBase64: string): Promise<string> {
   return text ? text : ""; 
 }
 
-export async function validateKey(apiKey: string) {
-try {
-    const ai = new GoogleGenAI({ apiKey: apiKey });
-    const response = await ai.models.generateContent({
-    model: "gemini-2.0-flash",
-    contents: "Retorne somente true e apenas sem nenhuma mensagem a mais apenas true.",
-    });
 
-    const text = response.candidates?.[0]?.content?.parts?.[0]?.text;
-    if(text === "true") return true;
-    else return false;
-} catch (err) {
-    throw err;
-}
-}
 
 export async function markdownToPdf(markdown: string, outFile: string) {
-  // 1. Markdown -> HTML
   const htmlContent = marked(markdown);
 
-  // 2. Template HTML completo
   const html = `
   <html>
     <head>
@@ -954,7 +903,6 @@ export async function markdownToPdf(markdown: string, outFile: string) {
     </body>
   </html>`;
 
-  // 3. HTML -> PDF
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
 
@@ -969,4 +917,3 @@ export async function markdownToPdf(markdown: string, outFile: string) {
   await browser.close();
 }
 
-markdownToPdf(await htmlAnalysis("https://observatorio.aeb.gov.br/"), "output.pdf");

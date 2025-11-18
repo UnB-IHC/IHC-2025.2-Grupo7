@@ -1,140 +1,25 @@
-// app/page.tsx
-"use client";
-
-import { useState } from "react";
-import { IoEye, IoEyeOff } from "react-icons/io5";
-import SuccessModal from "../components/SucessModal";
-import ImageUploadButton from "../components/ImageUploadButton";
-import { useRouter } from "next/navigation";
+import { htmlAnalysis, imageAnalysis } from "../lib/ai";
+import Page from "../components/Page";
 
 export default function Home() {
-  const router = useRouter();
+  async function handleSubmit(formData: FormData) : Promise<string> {
+    "use server";
 
-  const [showPassword, setShowPassword] = useState(false);
-  const [error, setError] = useState("");
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedImage, setSelectedImage] = useState<File | null>(null);
-  const [inputMode, setInputMode] = useState<'url' | 'image'>('url');
+    const url = formData.get("pergunta") as string;
 
-  const toggleVisibility = () => {
-    setShowPassword(!showPassword);
-  };
+    const result = await htmlAnalysis(url);
+    return result;
+  }
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault(); 
-    
-    // Validação do token (sempre necessário)
-    const input = e.currentTarget.elements.namedItem(
-      "api-token",
-    ) as HTMLInputElement;
+  async function handleImage(base64: string): Promise<string> {
+    "use server";
+    return await imageAnalysis(base64);
+  }
 
-    if (!input.value) {
-      setError("Ei, parece que você esqueceu de colar sua chave da API aqui! 🔑");
-      return;
-    }
-
-    setError("");
-    console.log("Token salvo:", input.value);
-    
-    setIsModalOpen(true);
-  };
-
-  const handleInput = (e: React.FormEvent<HTMLInputElement>) => {
-    if (error) {
-      setError("");
-    }
-  };
 
   return (
-    <div className="relative min-h-screen bg-gray-900 font-sans">
-      <div className="relative z-10 flex min-h-screen items-center justify-center p-4">
-        <div className="w-full max-w-lg p-8">
-          <div className="text-center">
-            <h1 className="text-3xl font-bold text-white">
-              Accessibility.AI
-            </h1>
-            <p className="mt-2 font-medium text-lg text-gray-300">
-              Insira seu token do Google AI Studio abaixo.
-            </p>
-          
-          </div>
-
-          <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
-            {/* Campo do Token (sempre visível) */}
-            <div>
-              <label htmlFor="api-token" className="sr-only">
-                Chave da API
-              </label>
-
-              <div className="relative mt-2">
-                <input
-                  id="api-token"
-                  name="api-token"
-                  type={showPassword ? "text" : "password"}
-                  autoComplete="off"
-                  onInput={handleInput} 
-                  className={`
-                    block w-full rounded-full bg-gray-900 p-4 pl-5 pr-12 text-white font-medium 
-                    placeholder:text-gray-400 shadow-sm ring-1 sm:text-sm sm:leading-6 transition-all
-                    ring-white/20 focus:ring-blue-500 focus:ring-2
-                  `}
-                  placeholder="Cole a chave da sua API aqui.."
-                  title="Campo para inserir sua chave de API secreta do Google AI Studio."
-                  aria-label="Campo para Chave da API do Google AI Studio"
-                />
-
-                <button
-                  type="button"
-                  className="absolute inset-y-0 right-0 flex items-center pr-4 text-gray-400 transition-colors hover:text-white cursor-pointer"
-                  onClick={toggleVisibility}
-                  title={showPassword ? "Esconder token" : "Mostrar token"}
-                  aria-label="Alternar visibilidade da senha"
-                >
-                  {showPassword ? (
-                    <IoEyeOff className="h-5 w-5" />
-                  ) : (
-                    <IoEye className="h-5 w-5" />
-                  )}
-                </button>
-              </div>
-            </div>
-
-            <div>
-              <button
-                type="submit"
-                className="flex w-full justify-center rounded-md bg-indigo-800 px-3 py-3 text-md font-semibold leading-6 text-white shadow-sm hover:bg-indigo-400 ease-in-out transition-all hover:scale-110 duration-300 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-blue-600 cursor-pointer"
-                title="Clique para salvar e validar sua chave de API."
-              >
-                Enviar token
-              </button>
-            </div>
-          </form>
-
-          <div className="mt-8 text-center">
-            <a
-              href="https://aistudio.google.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm text-gray-200 transition-colors hover:text-blue-400 hover:underline"
-              title="Abre o Google AI Studio em uma nova aba para você gerar sua chave."
-            >
-              Não tem uma chave? Crie uma no Google AI Studio
-              <span aria-hidden="true"> &rarr;</span>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <SuccessModal
-        isOpen={isModalOpen}
-        title="Seu token foi validado!"
-        message="Seu token foi salvo com sucesso e já pode ser usado."
-        onClose={() => setIsModalOpen(false)}
-        onConfirm={() => {
-          setIsModalOpen(false);
-          router.push("/backend");
-        }}
-      />
+    <div className="h-screen flex items-center justify-center bg-gray-100">
+      <Page actionHTML={handleSubmit} actionImage={handleImage} />
     </div>
   );
 }

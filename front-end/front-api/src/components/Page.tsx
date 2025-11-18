@@ -1,6 +1,5 @@
 "use client";
 
-import MarkdownView from "./MarkdownView";
 import { useState } from "react";
 
 type FormProps = {
@@ -19,6 +18,7 @@ export default function Page({ actionHTML, actionImage }: FormProps) {
     if (!html) {
       setHtml(true);
       setPrint(false);
+      setResultado("");
     }
   };
 
@@ -26,11 +26,15 @@ export default function Page({ actionHTML, actionImage }: FormProps) {
     if (!print) {
       setPrint(true);
       setHtml(false);
+      setResultado("");
     }
   };
 
+  const [loading, setLoading] = useState(false);
+
   const handleClick = () => {
     async function downloadPDF(markdown: string) {
+
       const res = await fetch("/api", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -46,6 +50,7 @@ export default function Page({ actionHTML, actionImage }: FormProps) {
       a.click();
     }
     downloadPDF(resultado);
+    setResultado("");
   };
 
   // ----- NENHUMA LÓGICA FOI ALTERADA ACIMA -----
@@ -88,12 +93,19 @@ export default function Page({ actionHTML, actionImage }: FormProps) {
             • Modo: URL
           </div>
           <form
-            action={async (formData) => {
+            onSubmit={async (e) => {
+              e.preventDefault(); // impede o server action
+              setLoading(true);
+
+              const formData = new FormData(e.currentTarget);
               const r = await actionHTML(formData);
+
               setResultado(r);
+              setLoading(false);
             }}
             className="mt-5 w-full"
           >
+
             <input
               type="text"
               name="pergunta"
@@ -120,13 +132,22 @@ export default function Page({ actionHTML, actionImage }: FormProps) {
             accept="image/*"
             onChange={async (e) => {
               const selected = e.target.files?.[0];
-              if (selected) {
-                const base64 = await fileToBase64(selected);
-                const base64Data = base64.split(",")[1];
-                setPreview(URL.createObjectURL(selected));
-                const result = await actionImage(base64Data);
-                setResultado(result);
-              }
+              if (!selected) return;
+
+              setLoading(true);          // ativa spinner imediatamente
+
+              await new Promise(res => setTimeout(res, 20));
+              // ^ dá tempo do React atualizar a UI (re-render) antes do async pesado
+
+              const base64 = await fileToBase64(selected);
+              const base64Data = base64.split(",")[1];
+
+              setPreview(URL.createObjectURL(selected));
+
+              const result = await actionImage(base64Data);
+              setResultado(result);
+
+              setLoading(false);         // desativa spinner
             }}
             className="mt-6 block w-full text-sm text-gray-400
               file:mr-4 file:py-2 file:px-4
@@ -153,14 +174,22 @@ export default function Page({ actionHTML, actionImage }: FormProps) {
           <li>Para o modo foto, o tamanho máximo é <strong>200 KB</strong></li>
         </ul>
       </div>
+    
+      {!loading && !resultado && (
+        <div className="h-12"></div>
+      )}
 
-      {/* --- Bloco de Resultado --- */}
+      {loading && (
+            <div className="flex justify-center items-center">
+              <div className="h-10 w-10 animate-spin rounded-full border-4 border-gray-400 border-t-transparent"></div>
+            </div>
+      )}
+
       {resultado && (
         <div className="w-full max-w-3xl flex flex-col items-center gap-4 mt-6">
-          <MarkdownView content={resultado} />
           <button
             onClick={handleClick}
-            className="h-12 px-8 bg-purple-600 text-white font-bold rounded-lg transition hover:bg-purple-700"
+            className="h-12 px-8 bg-gray-400 text-white font-bold rounded-lg transition hover:bg-gray-700 cursor-pointer"
           >
             Baixar PDF
           </button>
