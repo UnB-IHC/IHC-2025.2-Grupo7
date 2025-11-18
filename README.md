@@ -41,12 +41,6 @@ As principais funcionalidades incluem:
 
 - Geração e exportação de relatórios.
 
-Explique em 2–3 linhas o objetivo do projeto, público-alvo e funcionalidades principais.
-
-Exemplo:
-
-> Aplicação Next.js que fornece uma interface para consulta de CPFs com opção de relatório completo pago via PIX.
-
 ---
 
 ## Pré-requisitos
