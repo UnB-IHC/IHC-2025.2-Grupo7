@@ -1,7 +1,7 @@
 # PROJETO IHC - Ferramenta de Análise de Acessibilidade com IA
 
 <div align="center">
-<img src="docs/imagens/logo-verificaaa.png" alt="Logo de prancheta com checklist" style="width: 100px">
+<img src=".assets/logo-ai" alt="Logo de prancheta com checklist" style="width: 100px">
 </div>
 
 ---
@@ -16,7 +16,6 @@
 * [Executando localmente](#executando-localmente)
 * [Build e produção](#build-e-produção)
 * [Deploy (ex.: Vercel)](#deploy-ex-vercel)
-* [Dúvidas / Solução de problemas](#dúvidas--solução-de-problemas)
 * [Contribuidores](#contribuidores)
 
 ---
@@ -106,21 +105,6 @@ aqui substitua "chave_api" pela chave real"
 ```bash
 npm run dev
 ```
-
----
-
-## Variáveis de ambiente
-
-Crie `.env.local` (ou use a estratégia do seu framework) com as variáveis necessárias. Exemplo:
-
-```
-NEXT_PUBLIC_API_URL=https://api.exemplo.com
-MP_CLIENT_ID=seu_mercadopago_client_id
-MP_CLIENT_SECRET=seu_mercadopago_secret
-NODE_ENV=development
-```
-
-> Nunca comite arquivos que contenham segredos (`.env.local` deve estar no .gitignore).
 
 ---
 
