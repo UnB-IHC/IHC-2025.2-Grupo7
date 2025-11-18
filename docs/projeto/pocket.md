@@ -108,7 +108,7 @@ Essa avaliação é essencial porque a WCAG assegura que o conteúdo seja percep
 ### **Compreensível**
 
 - ☐ Linguagem simples e direta?
-- ☐ Cabeçalhos organizados (<h1> a <h6>)?
+- ☐ Cabeçalhos organizados (`<h1>`–`<h6>`)?
 - ☐ Comportamento consistente dos componentes?
 
 **Formulários**
