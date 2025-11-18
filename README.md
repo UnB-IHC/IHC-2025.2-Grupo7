@@ -1,7 +1,7 @@
 # PROJETO IHC - Ferramenta de Análise de Acessibilidade com IA
 
 <div align="center">
-<img src=".assets/icone-ai.png" alt="Logo de prancheta com checklist" style="width: 100px">
+<img src="./assets/icone-ai.png" alt="Logo de prancheta com checklist" style="width: 100px">
 </div>
 
 ---
