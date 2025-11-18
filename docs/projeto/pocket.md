@@ -225,3 +225,13 @@ Essa referência é importante porque trata a acessibilidade como parte integral
 - ☐ Cor não é o único sinal?
 - ☐ Texto ampliável até 200%?
 
+## Bibliografia
+
+<a id="FRM1" href="#anchor_1">1.</a> DINIZ, V.; FERRAZ, R.; NASCIMENTO, C. M.; CREDIDIO, R. Guia de Boas Práticas para Acessibilidade Digital. Programa de Cooperação entre Reino Unido e Brasil em Acesso Digital, 2023. Disponível em: https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf. Acesso em: 17 Nov. 2025.
+
+<a id="FRM2" href="#anchor_2">2.</a> ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. NBR 17225: Acessibilidade para conteúdo web. Rio de Janeiro: ABNT, 2025.
+
+<a id="FRM2" href="#anchor_2">3.</a> W3C. Web Content Accessibility Guidelines (WCAG) 2.2. Disponível em: https://www.w3.org/TR/WCAG22/. Acesso em: 17 Nov. 2025.
+
+<a id="FRM2" href="#anchor_2">4.</a> NIELSEN, Jakob. Usability Engineering. Boston: Academic Press, 1994.
+
