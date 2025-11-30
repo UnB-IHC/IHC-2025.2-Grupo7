@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import { HowWork } from "./HowWork";
+import { useRouter } from "next/navigation";
 
 type FormProps = {
   actionHTML: (formData: FormData) => Promise<string>;
@@ -10,6 +12,7 @@ type FormProps = {
 export default function Page({ actionHTML, actionImage }: FormProps) {
   const [preview, setPreview] = useState<string | null>(null);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [inputResponse, setInputResponse] = useState("");
   const [resultado, setResultado] = useState("");
   const [html, setHtml] = useState(true);
   const [print, setPrint] = useState(false);
@@ -35,7 +38,7 @@ export default function Page({ actionHTML, actionImage }: FormProps) {
   const handleClick = () => {
     async function downloadPDF(markdown: string) {
 
-      const res = await fetch("/api", {
+      const res = await fetch("/api/generate-pdf", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ markdown }),
@@ -46,7 +49,7 @@ export default function Page({ actionHTML, actionImage }: FormProps) {
 
       const a = document.createElement("a");
       a.href = url;
-      a.download = "meu-pdf.pdf";
+      a.download = "Analise-Acessibilidade.pdf";
       a.click();
     }
     downloadPDF(resultado);
@@ -109,10 +112,22 @@ export default function Page({ actionHTML, actionImage }: FormProps) {
             <input
               type="text"
               name="pergunta"
+              onChange={(e) => {
+                  setInputResponse(e.target.value);
+              }}
               placeholder="https://meusite.com"
               className="h-14 w-full px-5 bg-gray-800 border border-gray-700 text-white rounded-full placeholder-gray-500 text-base"
             />
-            {/* O 'action' do form cuida do envio, sem precisar de botão extra */}
+            <div className="pt-5">
+              <HowWork/>
+            </div>
+            <div className="py-3">
+              {!loading && !resultado && inputResponse && (
+                <button type="submit" className="cursor-pointer py-2 px-5 bg-blue-600 rounded-xl">
+                Enviar
+              </button>
+              )}
+            </div>
           </form>
         </div>
       )}
@@ -149,36 +164,18 @@ export default function Page({ actionHTML, actionImage }: FormProps) {
 
               setLoading(false);         // desativa spinner
             }}
-            className="mt-6 block w-full text-sm text-gray-400
+            className="pt-6 block w-full text-sm text-gray-400 pl-3 cursor-pointer
               file:mr-4 file:py-2 file:px-4
               file:rounded-lg file:border-0 file:text-sm file:font-semibold
               file:bg-emerald-700 file:text-white hover:file:bg-emerald-900 duration-300 transition-colors
               cursor-pointer"
           />
+          <div className="pt-5">
+              <HowWork/>
+            </div>
         </div>
       )}
-
-      {/* --- Bloco "Como Funciona" --- */}
-      <div className="w-full max-w-md bg-gray-800 p-4 rounded-lg mt-6">
-        <h3 className="font-semibold text-white">Como funciona:</h3>
-        <ul className="list-disc list-inside mt-2 text-gray-300 text-sm space-y-1">
-          <li>
-            <span className="font-semibold text-blue-400">Modo URL:</span>{" "}
-            Insira o endereço do seu sistema
-          </li>
-          <li>
-            <span className="font-semibold text-green-400">Modo Imagem:</span>{" "}
-            Faça upload de uma captura de tela
-          </li>
-          <li>Apenas um dos métodos é necessário</li>
-          <li>Para o modo foto, o tamanho máximo é <strong>200 KB</strong></li>
-        </ul>
-      </div>
     
-      {!loading && !resultado && (
-        <div className="h-12"></div>
-      )}
-
       {loading && (
             <div className="flex justify-center items-center">
               <div className="h-10 w-10 animate-spin rounded-full border-4 border-gray-400 border-t-transparent"></div>
@@ -186,13 +183,24 @@ export default function Page({ actionHTML, actionImage }: FormProps) {
       )}
 
       {resultado && (
-        <div className="w-full max-w-3xl flex flex-col items-center gap-4 mt-6">
-          <button
+        <div className="w-full max-w-3xl flex flex-col items-center">
+          {html && (
+            <button
             onClick={handleClick}
-            className="h-12 px-8 bg-gray-400 text-white font-bold rounded-lg transition hover:bg-gray-700 cursor-pointer"
+            className=" py-2 px-5 bg-blue-600 text-white font-bold rounded-lg transition hover:bg-gray-700 cursor-pointer"
           >
             Baixar PDF
           </button>
+          )}
+          {print && (
+            <button
+            onClick={handleClick}
+            className=" py-2 px-5 bg-emerald-600 text-white font-bold rounded-lg transition hover:bg-gray-700 cursor-pointer"
+          >
+            Baixar PDF
+          </button>
+          )}
+          
         </div>
       )}
     </div>
