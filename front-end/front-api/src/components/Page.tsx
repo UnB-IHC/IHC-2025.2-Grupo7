@@ -54,6 +54,7 @@ export default function Page({ actionHTML, actionImage }: FormProps) {
     }
     downloadPDF(resultado);
     setResultado("");
+    setInputResponse("");
   };
 
   // ----- NENHUMA LÓGICA FOI ALTERADA ACIMA -----
@@ -112,6 +113,7 @@ export default function Page({ actionHTML, actionImage }: FormProps) {
             <input
               type="text"
               name="pergunta"
+              value={inputResponse}
               onChange={(e) => {
                   setInputResponse(e.target.value);
               }}
