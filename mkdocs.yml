@@ -30,6 +30,7 @@ theme:
     - navigation.tracking
     - toc.follow
     - navigation.top
+    - navigation.tabs # <-- ADICIONE ESTA LINHA
     - content.code.copy
     - content.action.edit
     - header.autohide
@@ -50,11 +51,19 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: false
+      clickable_checkbox: true
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/chart.js
+  - javascripts/charts.js
 
 nav:
   - Home: index.md
-  - Integrantes: integrantes.md
-  - Projeto IHC:
-    - Ferramentas e Referências: projeto/ferramentas.md
-    - Site Melhorado: projeto/site-melhorado.md
-    - Pocket: projeto/pocket.md
+  - Design: projeto/design.md
+  - Desenvolvimento Web: projeto/desenvolvimentoweb.md
+  - Geração de Conteúdo: projeto/geracaodeconteudo
+  - Gestão do Projeto: projeto/gestaodeprojetos.md 
+  - Site Melhorado: projeto/site-melhorado.md
+  - Ferramentas e Referências: projeto/ferramentas.md

@@ -3,12 +3,11 @@
 ## Website Analisado e Melhorado
 
 ### Link do Site Original
-- **URL:** [https://observatorio.aeb.gov.br/](https://observatorio.aeb.gov.br/)
+- **URL:** [Link para o site](https://observatorio.aeb.gov.br/)
 - **Descrição:** O Observatório do Setor Espacial Brasileiro é uma iniciativa dedicada a reunir, organizar e divulgar informações estratégicas sobre as atividades espaciais no Brasil. Seu objetivo é promover transparência, acesso ao conhecimento e apoio à tomada de decisões no setor, por meio de dados atualizados, indicadores, análises e conteúdos técnicos. A plataforma oferece uma visão ampla sobre programas, projetos, investimentos, políticas públicas, inovação e desenvolvimento tecnológico relacionados ao setor espacial brasileiro. Ao facilitar o acesso a essas informações, o Observatório contribui para o fortalecimento da pesquisa, da educação, da indústria e da governança espacial no país.
 
 ### Link do Site Melhorado
 - **URL:** [Link para o site melhorado](https://ihc-2025-2-grupo7.vercel.app/)
-- **Hospedagem:** [Onde está hospedado](https://vercel.com/)
 
   
 ### **Tecnologias:**
@@ -20,54 +19,24 @@ Essas tecnologias, combinadas, contribuíram para tornar o site mais eficiente, 
 
 ## Melhorias Implementadas
 
-## Problemas Identificados
-
-### 1. **Problema:** Baixo contraste visual nos itens de navegação durante a interação com mouse
-- **Solução:** Implementado contraste aprimorado com fundo escuro e texto branco no hover
-- **Diretriz WCAG:** 1.4.3 - Contraste (Mínimo)
-
-### 2. **Problema:** Widget VLibras implementado como redirecionamento externo ao invés de integração nativa
-- **Solução:** Integração completa via JavaScript com inicialização programática do widget
-- **Diretriz WCAG:** 1.2.6 - Legendas em Mídia Pré-gravada
-
-### 3. **Problema:** Carrossel automático sem controles de pausa e com velocidade de transição inadequada
-- **Solução:** Adicionado botão de pausar/continuar com controle de estado do autoplay
-- **Diretriz WCAG:** 2.2.2 - Pausar, Parar, Esconder
-
-### 4. **Problema:** Ausência de descrições textuais alternativas em elementos visuais e interativos
-- **Solução:** Textos alternativos descritivos em todas as imagens e atributos title/aria-label
-- **Diretriz WCAG:** 1.1.1 - Conteúdo Não Textual
-
-### 5. **Problema:** Inconsistências na aplicação do modo de alto contraste em componentes específicos
-- **Solução:** Sistema completo de alto contraste com aplicação consistente em todos os componentes
-- **Diretriz WCAG:** 1.4.6 - Contraste (Reforçado)
-
-### 6. **Problema:** Baixa distintividade visual do botão de acesso à área restrita
-- **Solução:** Estilo visual diferenciado com cores contrastantes e atributos semânticos claros
-- **Diretriz WCAG:** 3.2.4 - Identificação Consistente
-
-### 7. **Problema:** Legibilidade comprometida da identificação institucional no cabeçalho
-- **Solução:** Ajuste de hierarquia visual com contraste adequado e diferenciação clara
-- **Diretriz WCAG:** 1.4.3 - Contraste (Mínimo)
-
-### 8. **Problema:** Linguagem técnica e não natural nos textos alternativos existentes
-- **Solução:** Revisão completa dos textos alternativos utilizando linguagem natural e descritiva
-- **Diretriz WCAG:** 3.1.5 - Texto de Leitura Secundária
+| # | Problema Identificado | Solução Implementada | Diretriz WCAG |
+| :--- | :--- | :--- | :--- |
+| **1** | Baixo contraste visual nos itens de navegação durante a interação com mouse | Implementado contraste aprimorado com fundo escuro e texto branco no hover | **1.4.3** - Contraste (Mínimo) |
+| **2** | Widget VLibras implementado como redirecionamento externo ao invés de integração nativa | Integração completa via JavaScript com inicialização programática do widget | **1.2.6** - Legendas em Mídia Pré-gravada |
+| **3** | Carrossel automático sem controles de pausa e com velocidade de transição inadequada | Adicionado botão de pausar/continuar com controle de estado do autoplay | **2.2.2** - Pausar, Parar, Esconder |
+| **4** | Ausência de descrições textuais alternativas em elementos visuais e interativos | Textos alternativos descritivos em todas as imagens e atributos `title`/`aria-label` | **1.1.1** - Conteúdo Não Textual |
+| **5** | Inconsistências na aplicação do modo de alto contraste em componentes específicos | Sistema completo de alto contraste com aplicação consistente em todos os componentes | **1.4.6** - Contraste (Reforçado) |
+| **6** | Baixa distintividade visual do botão de acesso à área restrita | Estilo visual diferenciado com cores contrastantes e atributos semânticos claros | **3.2.4** - Identificação Consistente |
+| **7** | Legibilidade comprometida da identificação institucional no cabeçalho | Ajuste de hierarquia visual com contraste adequado e diferenciação clara | **1.4.3** - Contraste (Mínimo) |
+| **8** | Linguagem técnica e não natural nos textos alternativos existentes | Revisão completa dos textos alternativos utilizando linguagem natural e descritiva | **3.1.5** - Texto de Leitura Secundária |
 
 ## Aspectos Melhorados
 
-### Acessibilidade
-- Textos alternativos para imagens
-- Contraste de cores
-- Estrutura semântica do HTML
-- Compatibilidade com leitores de tela
-
-### Usabilidade
-- Interface mais intuitiva
-- Organização da informação
-- Responsividade para dispositivos móveis
-- Tempo de carregamento otimizado
-- Feedback para ações do usuário
+| Categoria | Detalhes e Itens Melhorados |
+| :--- | :--- |
+| **Acessibilidade** | • Textos alternativos para imagens<br>• Contraste de cores aprimorado<br>• Estrutura semântica do HTML correta<br>• Compatibilidade total com leitores de tela |
+| **Usabilidade** | • Interface mais intuitiva<br>• Melhor organização da informação<br>• Responsividade para dispositivos móveis<br>• Tempo de carregamento otimizado<br>• Feedback visual para ações do usuário |
+| **Diretrizes Aplicadas** | • **WCAG 2.2 AA**<br>• **NBR ISO/IEC 17225:2025** |
 
 
 ### Diretrizes Aplicadas
