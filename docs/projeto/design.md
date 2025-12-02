@@ -8,7 +8,7 @@ Este guia consolida diretrizes essenciais de Design (UI/UX) para assegurar que a
 
 ## Heurísticas de Nielsen
 
-### Navegação, Design e Controle
+- **Navegação, Design e Controle**
 
 - [ ] Ícones compreensíveis e universais? [[Heurística #2]](https://www.nngroup.com/articles/ten-usability-heuristics/)
 - [ ] Há como cancelar ações? [[Heurística #3]](https://www.nngroup.com/articles/ten-usability-heuristics/)
@@ -24,7 +24,7 @@ Este guia consolida diretrizes essenciais de Design (UI/UX) para assegurar que a
 
 ## WCAG 2.2
 
-### Design e Adaptação
+- **Design e Adaptação**
 
 - [ ] Informação não depende só de cor ou forma? [[WCAG 1.4.1]](https://www.w3.org/TR/WCAG22/#use-of-color), [[WCAG 1.3.3]](https://www.w3.org/TR/WCAG22/#sensory-characteristics)
 - [ ] Layout não perde conteúdo em diferentes orientações? [[WCAG 1.3.4]](https://www.w3.org/TR/WCAG22/#orientation), [[WCAG 1.4.10]](https://www.w3.org/TR/WCAG22/#reflow)
@@ -42,7 +42,7 @@ Este guia consolida diretrizes essenciais de Design (UI/UX) para assegurar que a
 
 ## ABNT NBR 17225:2025
 
-### Design e Aparência
+- **Design e Aparência**
 
 - [ ] Contraste mínimo conforme norma? [[NBR 5.11.3]](https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf), [[NBR 5.11.4]](https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf), [[NBR 5.11.5]](https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf)
 - [ ] Cor não é o único sinal? [[NBR 5.11.1]](https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf)

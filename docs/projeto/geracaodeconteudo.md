@@ -17,14 +17,16 @@ Este guia assegura que a informação não apenas exista, mas que seja compreens
 
 ## WCAG 2.2
 
-### Conteúdo e Multimídia
+- **Conteúdo e Multimídia**
 
 - [ ] Todas as imagens têm alt adequado? [[WCAG 1.1.1]](https://www.w3.org/TR/WCAG22/#non-text-content)
 - [ ] Elementos gráficos possuem descrição? [[WCAG 1.1.1]](https://www.w3.org/TR/WCAG22/#non-text-content)
 - [ ] Vídeos com legendas e audiodescrição? [[WCAG 1.2.2]](https://www.w3.org/TR/WCAG22/#captions-prerecorded), [[WCAG 1.2.3]](https://www.w3.org/TR/WCAG22/#audio-description-or-media-alternative-prerecorded), [[WCAG 1.2.5]](https://www.w3.org/TR/WCAG22/#audio-description-prerecorded)
 - [ ] Áudios possuem transcrição? [[WCAG 1.2.1]](https://www.w3.org/TR/WCAG22/#audio-only-and-video-only-prerecorded)
 
-### Redação e Clareza
+-----
+
+- **Redação e Clareza**
 
 - [ ] Títulos de páginas claros? [[WCAG 2.4.2]](https://www.w3.org/TR/WCAG22/#page-titled)
 - [ ] Linguagem simples e direta? [[WCAG 3.1.5 - AAA]](https://www.w3.org/TR/WCAG22/#reading-level)
@@ -41,7 +43,7 @@ Este guia assegura que a informação não apenas exista, mas que seja compreens
 
 ## ABNT NBR 17225:2025
 
-### Conteúdo e Multimídia
+- **Conteúdo e Multimídia**
 
 - [ ] Alt em imagens? [[NBR 5.2.1]](https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf)
 - [ ] Vídeos com legendas/audiodescrição? [[NBR 5.14.2]](https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf), [[NBR 5.14.4]](https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf)

@@ -17,7 +17,7 @@ Este guia estabelece os parâmetros de governança necessários para garantir a 
 
 ## ABNT NBR 17225:2025
 
-### Validação e Compatibilidade
+- **Validação e Compatibilidade**
 
 - [ ] Avaliação com WAVE, Axe, Lighthouse? [[NBR Seção 6]](https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf)
 - [ ] Compatibilidade com leitores de tela? [[NBR 5.13.10]](https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf)

@@ -8,7 +8,7 @@ Este guia orienta a etapa de implementação técnica, assegurando que a interfa
 
 ## Heurísticas de Nielsen
 
-### Feedback e Status do Sistema
+- **Feedback e Status do Sistema**
 
 - [ ] O sistema informa o status das ações? [[Heurística #1]](https://www.nngroup.com/articles/ten-usability-heuristics/)
 - [ ] Existem indicadores visuais (carregamento, sucesso, progresso)? [[Heurística #1]](https://www.nngroup.com/articles/ten-usability-heuristics/)
@@ -17,7 +17,7 @@ Este guia orienta a etapa de implementação técnica, assegurando que a interfa
 
 ## WCAG 2.2
 
-### Navegação e Interação (Teclado e Foco)
+- **Navegação e Interação (Teclado e Foco)**
 
 - [ ] Tudo funciona via teclado? [[WCAG 2.1.1]](https://www.w3.org/TR/WCAG22/#keyboard)
 - [ ] Foco visível e navegação lógica? [[WCAG 2.4.7]](https://www.w3.org/TR/WCAG22/#focus-visible), [[WCAG 2.4.3]](https://www.w3.org/TR/WCAG22/#focus-order), [[WCAG 2.4.11 - AA]](https://www.w3.org/TR/WCAG22/#focus-not-obscured-minimum), [[WCAG 2.4.13 - AAA]](https://www.w3.org/TR/WCAG22/#focus-appearance)
@@ -25,7 +25,9 @@ Este guia orienta a etapa de implementação técnica, assegurando que a interfa
 - [ ] Usuário pode pausar/ajustar elementos temporizados? [[WCAG 2.2.1]](https://www.w3.org/TR/WCAG22/#timing-adjustable)
 - [ ] Atalhos para pular blocos repetidos? [[WCAG 2.4.1]](https://www.w3.org/TR/WCAG22/#bypass-blocks)
 
-### Estrutura e Semântica
+-----
+
+- **Estrutura e Semântica**
 
 - [ ] Cabeçalhos organizados (`<h1>`–`<h6>`)? [[WCAG 1.3.1]](https://www.w3.org/TR/WCAG22/#info-and-relationships)
 - [ ] Comportamento consistente dos componentes? [[WCAG 3.2.3]](https://www.w3.org/TR/WCAG22/#unusual-words)
@@ -45,7 +47,7 @@ Este guia orienta a etapa de implementação técnica, assegurando que a interfa
 
 ## ABNT NBR 17225:2025
 
-### Navegação e Interação (Teclado e Foco)
+- **Navegação e Interação (Teclado e Foco)**
 
 - [ ] Foco visível em todos os elementos? [[NBR 5.1.1]](https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf)
 - [ ] Foco não escondido? [[NBR 5.1.2]](https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf), [[NBR 5.1.3]](https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf)
@@ -53,7 +55,9 @@ Este guia orienta a etapa de implementação técnica, assegurando que a interfa
 - [ ] Sem aprisionamento do foco? [[NBR 5.1.6]](https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf)
 - [ ] Pop-ups e menus acessíveis via teclado? [[NBR 5.1.12]](https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf), [[NBR 5.1.15]](https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf), [[NBR 5.1.7]](https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf)
 
-### Estrutura e Semântica
+-----
+
+- **Estrutura e Semântica**
 
 - [ ] Estrutura semântica (`<h1>`–`<h6>`, `<nav>`, `<main>`)? [[NBR 5.3.1]](https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf), [[NBR 5.4.1]](https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf)
 - [ ] Campos com `<label>`? [[NBR 5.9.1]](https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf)
