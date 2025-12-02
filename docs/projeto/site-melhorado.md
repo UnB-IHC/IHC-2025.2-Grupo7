@@ -45,7 +45,6 @@ Essas tecnologias, combinadas, contribuíram para tornar o site mais eficiente, 
   
 ## Bibliografia
 
-<a id="FRM1" href="#anchor_1">1.</a> W3C. Web Content Accessibility Guidelines (WCAG) 2.2. Disponível em: https://www.w3.org/TR/WCAG22/. Acesso em: 17 Nov. 2025.
+<a id="FRM2" href="#anchor_2">1.</a> ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. NBR 17225: Acessibilidade para conteúdo web. Rio de Janeiro: ABNT, 2025.
 
-<a id="FRM1" href="#anchor_1">2.</a> ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. NBR 17225: Acessibilidade para conteúdo web. Rio de Janeiro: ABNT, 2025.
-
+<a id="FRM2" href="#anchor_2">2.</a> W3C. Web Content Accessibility Guidelines (WCAG) 2.2. Disponível em: [https://www.w3.org/TR/WCAG22/](https://www.w3.org/TR/WCAG22/). Acesso em: 17 Nov. 2025.

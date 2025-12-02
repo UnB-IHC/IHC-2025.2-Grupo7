@@ -7,44 +7,54 @@ Este guia assegura que a informação não apenas exista, mas que seja compreens
 </div>
 
 ## Heurísticas de Nielsen
-- [ ] Linguagem familiar ao usuário?
-- [ ] Informações organizadas logicamente?
-- [ ] Mensagens de erro claras e específicas?
-- [ ] Orientação sobre como corrigir o erro?
-- [ ] Ajuda acessível e bem estruturada?
-- [ ] FAQs e tooltips quando necessário?
+
+- [ ] Linguagem familiar ao usuário? [[Heurística #2]](https://www.nngroup.com/articles/ten-usability-heuristics/)
+- [ ] Informações organizadas logicamente? [[Heurística #2]](https://www.nngroup.com/articles/ten-usability-heuristics/)
+- [ ] Mensagens de erro claras e específicas? [[Heurística #9]](https://www.nngroup.com/articles/ten-usability-heuristics/)
+- [ ] Orientação sobre como corrigir o erro? [[Heurística #9]](https://www.nngroup.com/articles/ten-usability-heuristics/)
+- [ ] Ajuda acessível e bem estruturada? [H[eurística #10]](https://www.nngroup.com/articles/ten-usability-heuristics/)
+- [ ] FAQs e tooltips quando necessário? [H[eurística #10]](https://www.nngroup.com/articles/ten-usability-heuristics/)
 
 ## WCAG 2.2
-- [ ] Todas as imagens têm alt adequado?
-- [ ] Elementos gráficos possuem descrição?
-- [ ] Vídeos com legendas e audiodescrição?
-- [ ] Áudios possuem transcrição?
-- [ ] Títulos de páginas claros?
-- [ ] Linguagem simples e direta?
-- [ ] Rótulos claros?
-- [ ] Instruções compreensíveis?
+
+### Conteúdo e Multimídia
+
+- [ ] Todas as imagens têm alt adequado? [[WCAG 1.1.1]](https://www.w3.org/TR/WCAG22/#non-text-content)
+- [ ] Elementos gráficos possuem descrição? [[WCAG 1.1.1]](https://www.w3.org/TR/WCAG22/#non-text-content)
+- [ ] Vídeos com legendas e audiodescrição? [[WCAG 1.2.2]](https://www.w3.org/TR/WCAG22/#captions-prerecorded), [[WCAG 1.2.3]](https://www.w3.org/TR/WCAG22/#audio-description-or-media-alternative-prerecorded), [[WCAG 1.2.5]](https://www.w3.org/TR/WCAG22/#audio-description-prerecorded)
+- [ ] Áudios possuem transcrição? [[WCAG 1.2.1]](https://www.w3.org/TR/WCAG22/#audio-only-and-video-only-prerecorded)
+
+### Redação e Clareza
+
+- [ ] Títulos de páginas claros? [[WCAG 2.4.2]](https://www.w3.org/TR/WCAG22/#page-titled)
+- [ ] Linguagem simples e direta? [[WCAG 3.1.5 - AAA]](https://www.w3.org/TR/WCAG22/#reading-level)
+- [ ] Rótulos claros? [[WCAG 2.4.6]](https://www.w3.org/TR/WCAG22/#headings-and-labels)
+- [ ] Instruções compreensíveis? [[WCAG 3.3.2]](https://www.w3.org/TR/WCAG22/#predictable)
 
 ## Guia de Boas Práticas
-- [ ] Alt correto em imagens significativas?
-- [ ] Termo “Pessoa com Deficiência (PcD)” corretamente usado?
-- [ ] Texto simples e claro?
-- [ ] Gráficos possuem descrição extra?
-- [ ] Vídeos com Libras/legendas/audiodescrição?
-- [ ] Podcasts com transcrições?
+- [ ] Alt correto em imagens significativas? [[Guia UK-BR]](https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf)
+- [ ] Termo “Pessoa com Deficiência (PcD)” corretamente usado? [[Guia UK-BR]](https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf)
+- [ ] Texto simples e claro? [[Guia UK-BR]](https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf)
+- [ ] Gráficos possuem descrição extra? [[Guia UK-BR]](https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf)
+- [ ] Vídeos com Libras/legendas/audiodescrição? [[Guia UK-BR]](https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf)
+- [ ] Podcasts com transcrições? [[Guia UK-BR]](https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf)
 
 ## ABNT NBR 17225:2025
-- [ ] Alt em imagens?
-- [ ] Vídeos com legendas/audiodescrição?
-- [ ] PDFs acessíveis?
-- [ ] Audiodescrição em imagens relevantes?
-- [ ] Possibilidade de Libras?
+
+### Conteúdo e Multimídia
+
+- [ ] Alt em imagens? [[NBR 5.2.1]](https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf)
+- [ ] Vídeos com legendas/audiodescrição? [[NBR 5.14.2]](https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf), [[NBR 5.14.4]](https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf)
+- [ ] PDFs acessíveis? [[NBR A.1.7]](https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf), [[NBR 5.7.7]](https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf)
+- [ ] Audiodescrição em imagens relevantes? [[NBR 5.2.4]](https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf)
+- [ ] Possibilidade de Libras? [[NBR 5.14.6]](https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf)
 
 ## Bibliografia
 
-<a id="FRM1" href="#anchor_1">1.</a> DINIZ, V.; FERRAZ, R.; NASCIMENTO, C. M.; CREDIDIO, R. Guia de Boas Práticas para Acessibilidade Digital. Programa de Cooperação entre Reino Unido e Brasil em Acesso Digital, 2023. Disponível em: https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf. Acesso em: 17 Nov. 2025.
+<a id="FRM1" href="#anchor_1">1.</a> DINIZ, V.; FERRAZ, R.; NASCIMENTO, C. M.; CREDIDIO, R. Guia de Boas Práticas para Acessibilidade Digital. Programa de Cooperação entre Reino Unido e Brasil em Acesso Digital, 2023. Disponível em: [https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf](https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf). Acesso em: 17 Nov. 2025.
 
 <a id="FRM2" href="#anchor_2">2.</a> ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. NBR 17225: Acessibilidade para conteúdo web. Rio de Janeiro: ABNT, 2025.
 
-<a id="FRM2" href="#anchor_2">3.</a> W3C. Web Content Accessibility Guidelines (WCAG) 2.2. Disponível em: https://www.w3.org/TR/WCAG22/. Acesso em: 17 Nov. 2025.
+<a id="FRM2" href="#anchor_2">3.</a> W3C. Web Content Accessibility Guidelines (WCAG) 2.2. Disponível em: [https://www.w3.org/TR/WCAG22/](https://www.w3.org/TR/WCAG22/). Acesso em: 17 Nov. 2025.
 
 <a id="FRM2" href="#anchor_2">4.</a> NIELSEN, Jakob. Usability Engineering. Boston: Academic Press, 1994.

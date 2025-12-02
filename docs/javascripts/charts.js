@@ -73,13 +73,24 @@ function initializeCharts() {
       datasets: [{
         data: [],
         backgroundColor: [],
-        borderWidth: 0
+        borderWidth: 0,
+        hoverOffset: 10 // <--- EFEITO VISUAL: A fatia expande ao passar o mouse
       }]
     },
     options: {
       responsive: true,
       maintainAspectRatio: false,
       cutout: '70%',
+      // --- CONFIGURAÇÃO DE INTERAÇÃO (CRUCIAL PARA FLUIDEZ) ---
+      interaction: {
+        mode: 'nearest',
+        intersect: true,
+        axis: 'r' // Otimiza para gráficos radiais
+      },
+      animation: {
+        animateScale: true,
+        animateRotate: true
+      },
       plugins: {
         legend: {
           display: true,
@@ -93,24 +104,30 @@ function initializeCharts() {
         },
         tooltip: {
           enabled: true,
+          // Otimização de performance: desliga animação do tooltip para aparecer mais rápido
+          animation: {
+            duration: 0
+          },
           callbacks: {
-
             label: function(context) {
+              // Pega o label e valor direto do contexto do Chart.js
               const label = context.label || '';
-              const value = context.raw; 
+              const value = context.raw;
 
-              if (label.includes('Pendente')) {
+              if (label === 'Pendente') { // Comparação exata é mais rápida que includes
                  return `Faltam: ${value} itens`;
               }
-t
-              const categoryIndex = context.dataIndex; 
+              
+              // (Removi o 't' que estava solto aqui no seu código original)
 
-              const catObj = categoryData.find(c => label.includes(c.label));
+              // Busca exata pelo Label para garantir que achou o objeto certo
+              const catObj = categoryData.find(c => c.label === label);
               
               if (catObj) {
                 const total = catObj.checkboxes.length;
                 return `${value}/${total} de ${catObj.label}`;
               }
+              
               return `${value} itens`;
             }
           }
