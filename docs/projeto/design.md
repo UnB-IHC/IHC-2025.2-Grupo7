@@ -47,7 +47,8 @@ Este guia consolida diretrizes essenciais de Design (UI/UX) para assegurar que a
 - [ ] Contraste mínimo conforme norma? [[NBR 5.11.3]](https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf), [[NBR 5.11.4]](https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf), [[NBR 5.11.5]](https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf)
 - [ ] Cor não é o único sinal? [[NBR 5.11.1]](https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf)
 
-## Bibliografia
+
+# Referências Bibliográficas
 
 <a id="FRM1" href="#anchor_1">1.</a> DINIZ, V.; FERRAZ, R.; NASCIMENTO, C. M.; CREDIDIO, R. Guia de Boas Práticas para Acessibilidade Digital. Programa de Cooperação entre Reino Unido e Brasil em Acesso Digital, 2023. Disponível em: [https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf](https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf). Acesso em: 17 Nov. 2025.
 
@@ -56,3 +57,11 @@ Este guia consolida diretrizes essenciais de Design (UI/UX) para assegurar que a
 <a id="FRM2" href="#anchor_2">3.</a> W3C. Web Content Accessibility Guidelines (WCAG) 2.2. Disponível em: [https://www.w3.org/TR/WCAG22/](https://www.w3.org/TR/WCAG22/). Acesso em: 17 Nov. 2025.
 
 <a id="FRM2" href="#anchor_2">4.</a> NIELSEN, Jakob. Usability Engineering. Boston: Academic Press, 1994.
+
+<a id="ref16" href="#anchor_16">5.</a> W3C. Success Criterion 1.3.3: Sensory Characteristics. In: Web Content Accessibility Guidelines (WCAG) 2.2. Disponível em: [https://www.w3.org/TR/WCAG22/#sensory-characteristics](https://www.w3.org/TR/WCAG22/#sensory-characteristics). Acesso em: 17 Nov. 2025.
+
+<a id="ref17" href="#anchor_17">6.</a> W3C. Success Criterion 1.3.4: Orientation. In: Web Content Accessibility Guidelines (WCAG) 2.2. Disponível em: [https://www.w3.org/TR/WCAG22/#orientation](https://www.w3.org/TR/WCAG22/#orientation). Acesso em: 17 Nov. 2025.
+
+<a id="ref18" href="#anchor_18">7.</a> W3C. Success Criterion 1.4.1: Use of Color. In: Web Content Accessibility Guidelines (WCAG) 2.2. Disponível em: [https://www.w3.org/TR/WCAG22/#use-of-color](https://www.w3.org/TR/WCAG22/#use-of-color). Acesso em: 17 Nov. 2025.
+
+<a id="ref19" href="#anchor_19">8.</a> W3C. Success Criterion 1.4.10: Reflow. In: Web Content Accessibility Guidelines (WCAG) 2.2. Disponível em: [https://www.w3.org/TR/WCAG22/#reflow](https://www.w3.org/TR/WCAG22/#reflow). Acesso em: 17 Nov. 2025.
