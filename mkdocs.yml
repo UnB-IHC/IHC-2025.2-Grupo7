@@ -66,4 +66,7 @@ nav:
   - Geração de Conteúdo: projeto/geracaodeconteudo
   - Gestão do Projeto: projeto/gestaodeprojetos.md 
   - Site Melhorado: projeto/site-melhorado.md
-  - Ferramentas e Referências: projeto/ferramentas.md
+  - Ferramentas e Referências: 
+        - Ferramenta: projeto/ferramentas.md
+        - Outras recomendações: projeto/recomendacoes.md
+  
