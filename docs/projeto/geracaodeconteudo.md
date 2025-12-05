@@ -59,4 +59,22 @@ Este guia assegura que a informação não apenas exista, mas que seja compreens
 
 <a id="FRM2" href="#anchor_2">3.</a> W3C. Web Content Accessibility Guidelines (WCAG) 2.2. Disponível em: [https://www.w3.org/TR/WCAG22/](https://www.w3.org/TR/WCAG22/). Acesso em: 17 Nov. 2025.
 
-<a id="FRM2" href="#anchor_2">4.</a> NIELSEN, Jakob. Usability Engineering. Boston: Academic Press, 1994.
+<a id="ref20" href="#anchor_20">4.</a> W3C. Success Criterion 1.1.1: Non-text Content. In: Web Content Accessibility Guidelines (WCAG) 2.2. Disponível em: [https://www.w3.org/TR/WCAG22/#non-text-content](https://www.w3.org/TR/WCAG22/#non-text-content). Acesso em: 17 Nov. 2025.
+
+<a id="ref21" href="#anchor_21">5.</a> W3C. Success Criterion 1.2.1: Audio-only and Video-only (Prerecorded). In: Web Content Accessibility Guidelines (WCAG) 2.2. Disponível em: [https://www.w3.org/TR/WCAG22/#audio-only-and-video-only-prerecorded](https://www.w3.org/TR/WCAG22/#audio-only-and-video-only-prerecorded). Acesso em: 17 Nov. 2025.
+
+<a id="ref22" href="#anchor_22">6.</a> W3C. Success Criterion 1.2.2: Captions (Prerecorded). In: Web Content Accessibility Guidelines (WCAG) 2.2. Disponível em: [https://www.w3.org/TR/WCAG22/#captions-prerecorded](https://www.w3.org/TR/WCAG22/#captions-prerecorded). Acesso em: 17 Nov. 2025.
+
+<a id="ref23" href="#anchor_23">23.</a> W3C. Success Criterion 1.2.3: Audio Description or Media Alternative (Prerecorded). In: Web Content Accessibility Guidelines (WCAG) 2.2. Disponível em: [https://www.w3.org/TR/WCAG22/#audio-description-or-media-alternative-prerecorded](https://www.w3.org/TR/WCAG22/#audio-description-or-media-alternative-prerecorded). Acesso em: 17 Nov. 2025.
+
+<a id="ref24" href="#anchor_24">24.</a> W3C. Success Criterion 1.2.5: Audio Description (Prerecorded). In: Web Content Accessibility Guidelines (WCAG) 2.2. Disponível em: [https://www.w3.org/TR/WCAG22/#audio-description-prerecorded](https://www.w3.org/TR/WCAG22/#audio-description-prerecorded). Acesso em: 17 Nov. 2025.
+
+<a id="ref25" href="#anchor_25">7.</a> W3C. Success Criterion 2.4.2: Page Titled. In: Web Content Accessibility Guidelines (WCAG) 2.2. Disponível em: [https://www.w3.org/TR/WCAG22/#page-titled](https://www.w3.org/TR/WCAG22/#page-titled). Acesso em: 17 Nov. 2025.
+
+<a id="ref26" href="#anchor_26">8.</a> W3C. Success Criterion 2.4.6: Headings and Labels. In: Web Content Accessibility Guidelines (WCAG) 2.2. Disponível em: [https://www.w3.org/TR/WCAG22/#headings-and-labels](https://www.w3.org/TR/WCAG22/#headings-and-labels). Acesso em: 17 Nov. 2025.
+
+<a id="ref27" href="#anchor_27">9.</a> W3C. Success Criterion 3.1.5: Reading Level. In: Web Content Accessibility Guidelines (WCAG) 2.2. Disponível em: [https://www.w3.org/TR/WCAG22/#reading-level](https://www.w3.org/TR/WCAG22/#reading-level). Acesso em: 17 Nov. 2025.
+
+<a id="ref28" href="#anchor_28">10.</a> W3C. Success Criterion 3.3.2: Labels or Instructions. In: Web Content Accessibility Guidelines (WCAG) 2.2. Disponível em: [https://www.w3.org/TR/WCAG22/#labels-or-instructions](https://www.w3.org/TR/WCAG22/#labels-or-instructions). Acesso em: 17 Nov. 2025.
+
+<a id="FRM2" href="#anchor_2">11.</a> NIELSEN, Jakob. Usability Engineering. Boston: Academic Press, 1994.
