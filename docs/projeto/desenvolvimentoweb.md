@@ -66,12 +66,42 @@ Este guia orienta a etapa de implementação técnica, assegurando que a interfa
 - [ ] Widgets e players com instrução e feedback? [[NBR 5.1.16]](https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf), [[NBR 5.8.15]](https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf)
 - [ ] Texto ampliável até 200%? [[NBR 5.12.7]](https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf), [[NBR 5.13.5]](https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf)
 
-## Bibliografia
+## Referências Bibliográficas 
 
 <a id="FRM1" href="#anchor_1">1.</a> DINIZ, V.; FERRAZ, R.; NASCIMENTO, C. M.; CREDIDIO, R. Guia de Boas Práticas para Acessibilidade Digital. Programa de Cooperação entre Reino Unido e Brasil em Acesso Digital, 2023. Disponível em: [https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf](https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf). Acesso em: 17 Nov. 2025.
 
 <a id="FRM2" href="#anchor_2">2.</a> ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. NBR 17225: Acessibilidade para conteúdo web. Rio de Janeiro: ABNT, 2025.
 
 <a id="FRM2" href="#anchor_2">3.</a> W3C. Web Content Accessibility Guidelines (WCAG) 2.2. Disponível em: [https://www.w3.org/TR/WCAG22/](https://www.w3.org/TR/WCAG22/). Acesso em: 17 Nov. 2025.
+
+<a id="ref1" href="#anchor_1">1.</a> Google – Chrome for Developers. Documentação e Ferramentas para Desenvolvedores. Disponível em: [https://developer.chrome.com/](https://developer.chrome.com/). Acesso em: 17 Nov. 2025.
+
+<a id="ref2" href="#anchor_2">2.</a> W3C. Success Criterion 1.3.1: Info and Relationships. In: Web Content Accessibility Guidelines (WCAG) 2.2. Disponível em: [https://www.w3.org/TR/WCAG22/#info-and-relationships](https://www.w3.org/TR/WCAG22/#info-and-relationships). Acesso em: 17 Nov. 2025.
+
+<a id="ref3" href="#anchor_3">3.</a> W3C. Success Criterion 2.1.1: Keyboard. In: Web Content Accessibility Guidelines (WCAG) 2.2. Disponível em: [https://www.w3.org/TR/WCAG22/#keyboard](https://www.w3.org/TR/WCAG22/#keyboard). Acesso em:  17 Nov. 2025.
+
+<a id="ref4" href="#anchor_4">4.</a> W3C. Success Criterion 2.1.2: No Keyboard Trap. In: Web Content Accessibility Guidelines (WCAG) 2.2. Disponível em: [https://www.w3.org/TR/WCAG22/#no-keyboard-trap](https://www.w3.org/TR/WCAG22/#no-keyboard-trap). Acesso em: 17 Nov. 2025.
+
+<a id="ref5" href="#anchor_5">5.</a> W3C. Success Criterion 2.2.1: Timing Adjustable. In: Web Content Accessibility Guidelines (WCAG) 2.2. Disponível em: [https://www.w3.org/TR/WCAG22/#timing-adjustable](https://www.w3.org/TR/WCAG22/#timing-adjustable). Acesso em: 17 Nov. 2025.
+
+<a id="ref6" href="#anchor_6">6.</a> W3C. Success Criterion 2.4.1: Bypass Blocks. In: Web Content Accessibility Guidelines (WCAG) 2.2. Disponível em: [https://www.w3.org/TR/WCAG22/#bypass-blocks](https://www.w3.org/TR/WCAG22/#bypass-blocks). Acesso em: 17 Nov. 2025.
+
+<a id="ref7" href="#anchor_7">7.</a> W3C. Success Criterion 2.4.3: Focus Order. In: Web Content Accessibility Guidelines (WCAG) 2.2. Disponível em: [https://www.w3.org/TR/WCAG22/#focus-order](https://www.w3.org/TR/WCAG22/#focus-order). Acesso em: 17 Nov. 2025.
+
+<a id="ref8" href="#anchor_8">8.</a> W3C. Success Criterion 2.4.7: Focus Visible. In: Web Content Accessibility Guidelines (WCAG) 2.2. Disponível em: [https://www.w3.org/TR/WCAG22/#focus-visible](https://www.w3.org/TR/WCAG22/#focus-visible). Acesso em: 17 Nov. 2025.
+
+<a id="ref9" href="#anchor_9">9.</a> W3C. Success Criterion 2.4.11: Focus Not Obscured (Minimum). In: Web Content Accessibility Guidelines (WCAG) 2.2. Disponível em: [https://www.w3.org/TR/WCAG22/#focus-not-obscured-minimum](https://www.w3.org/TR/WCAG22/#focus-not-obscured-minimum). Acesso em: 17 Nov. 2025.
+
+<a id="ref10" href="#anchor_10">10.</a> W3C. Success Criterion 2.4.13: Focus Appearance. In: Web Content Accessibility Guidelines (WCAG) 2.2. Disponível em: [https://www.w3.org/TR/WCAG22/#focus-appearance](https://www.w3.org/TR/WCAG22/#focus-appearance). Acesso em: 17 Nov. 2025.
+
+<a id="ref11" href="#anchor_11">11.</a> W3C. Success Criterion 3.2.3: Consistent Navigation. In: Web Content Accessibility Guidelines (WCAG) 2.2. Disponível em: [https://www.w3.org/TR/WCAG22/#consistent-navigation](https://www.w3.org/TR/WCAG22/#consistent-navigation). Acesso em: 17 Nov. 2025.
+
+<a id="ref12" href="#anchor_12">12.</a> W3C. Success Criterion 3.3.1: Error Identification. In: Web Content Accessibility Guidelines (WCAG) 2.2. Disponível em: [https://www.w3.org/TR/WCAG22/#error-identification](https://www.w3.org/TR/WCAG22/#error-identification). Acesso em: 17 Nov. 2025.
+
+<a id="ref13" href="#anchor_13">13.</a> W3C. Success Criterion 3.3.3: Error Suggestion. In: Web Content Accessibility Guidelines (WCAG) 2.2. Disponível em: [https://www.w3.org/TR/WCAG22/#error-suggestion](https://www.w3.org/TR/WCAG22/#error-suggestion). Acesso em: 17 Nov. 2025.
+
+<a id="ref14" href="#anchor_14">14.</a> W3C. Success Criterion 4.1.1: Parsing. In: Web Content Accessibility Guidelines (WCAG) 2.2. Disponível em: [https://www.w3.org/TR/WCAG22/#parsing](https://www.w3.org/TR/WCAG22/#parsing). Acesso em: 17 Nov. 2025.
+
+<a id="ref15" href="#anchor_15">15.</a> W3C. Success Criterion 4.1.2: Name, Role, Value. In: Web Content Accessibility Guidelines (WCAG) 2.2. Disponível em: [https://www.w3.org/TR/WCAG22/#name-role-value](https://www.w3.org/TR/WCAG22/#name-role-value). Acesso em: 17 Nov. 2025.
 
 <a id="FRM2" href="#anchor_2">4.</a> NIELSEN, Jakob. Usability Engineering. Boston: Academic Press, 1994.
