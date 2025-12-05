@@ -42,9 +42,25 @@ Essas tecnologias, combinadas, contribuíram para tornar o site mais eficiente, 
 ### Diretrizes Aplicadas
 - **WCAG 2.2 AA:** 
 - **NBR ISO/IEC 17225:2025:**
+
   
-## Bibliografia
+# Referências Bibliográficas
 
 <a id="FRM2" href="#anchor_2">1.</a> ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. NBR 17225: Acessibilidade para conteúdo web. Rio de Janeiro: ABNT, 2025.
 
-<a id="FRM2" href="#anchor_2">2.</a> W3C. Web Content Accessibility Guidelines (WCAG) 2.2. Disponível em: [https://www.w3.org/TR/WCAG22/](https://www.w3.org/TR/WCAG22/). Acesso em: 17 Nov. 2025.
+<a id="ref20" href="#anchor_20">2.</a> W3C. Success Criterion 1.1.1: Non-text Content. In: Web Content Accessibility Guidelines (WCAG) 2.2. Disponível em: [https://www.w3.org/TR/WCAG22/#non-text-content](https://www.w3.org/TR/WCAG22/#non-text-content). Acesso em: 17 Nov. 2025.
+
+<a id="ref27" href="#anchor_27">3.</a> W3C. Success Criterion 3.1.5: Reading Level. In: Web Content Accessibility Guidelines (WCAG) 2.2. Disponível em: [https://www.w3.org/TR/WCAG22/#reading-level](https://www.w3.org/TR/WCAG22/#reading-level). Acesso em: 17 Nov. 2025.
+
+<a id="ref29" href="#anchor_29">4.</a> W3C. Success Criterion 1.2.6: Sign Language (Prerecorded). In: Web Content Accessibility Guidelines (WCAG) 2.2. Disponível em: [https://www.w3.org/TR/WCAG22/#sign-language-prerecorded](https://www.w3.org/TR/WCAG22/#sign-language-prerecorded). Acesso em: 17 Nov. 2025.
+
+<a id="ref30" href="#anchor_30">5.</a> W3C. Success Criterion 1.4.3: Contrast (Minimum). In: Web Content Accessibility Guidelines (WCAG) 2.2. Disponível em: [https://www.w3.org/TR/WCAG22/#contrast-minimum](https://www.w3.org/TR/WCAG22/#contrast-minimum). Acesso em: 17 Nov. 2025.
+
+<a id="ref31" href="#anchor_31">6.</a> W3C. Success Criterion 1.4.6: Contrast (Enhanced). In: Web Content Accessibility Guidelines (WCAG) 2.2. Disponível em: [https://www.w3.org/TR/WCAG22/#contrast-enhanced](https://www.w3.org/TR/WCAG22/#contrast-enhanced). Acesso em: 17 Nov. 2025.
+
+<a id="ref32" href="#anchor_32">7.</a> W3C. Success Criterion 2.2.2: Pause, Stop, Hide. In: Web Content Accessibility Guidelines (WCAG) 2.2. Disponível em: [https://www.w3.org/TR/WCAG22/#pause-stop-hide](https://www.w3.org/TR/WCAG22/#pause-stop-hide). Acesso em: 17 Nov. 2025.
+
+<a id="ref33" href="#anchor_33">8.</a> W3C. Success Criterion 3.2.4: Consistent Identification. In: Web Content Accessibility Guidelines (WCAG) 2.2. Disponível em: [https://www.w3.org/TR/WCAG22/#consistent-identification](https://www.w3.org/TR/WCAG22/#consistent-identification). Acesso em: 17 Nov. 2025.
+
+<a id="FRM2" href="#anchor_2">9.</a> W3C. Web Content Accessibility Guidelines (WCAG) 2.2. Disponível em: [https://www.w3.org/TR/WCAG22/](https://www.w3.org/TR/WCAG22/). Acesso em: 17 Nov. 2025.
+
