@@ -23,7 +23,8 @@ Este guia estabelece os parâmetros de governança necessários para garantir a 
 - [ ] Compatibilidade com leitores de tela? [[NBR 5.13.10]](https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf)
 - [ ] Atende ao nível AA da WCAG? [[NBR 4 Conformidade]](https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf)
 
-## Bibliografia
+
+# Referências Bibliográficas
 
 <a id="FRM1" href="#anchor_1">1.</a> DINIZ, V.; FERRAZ, R.; NASCIMENTO, C. M.; CREDIDIO, R. Guia de Boas Práticas para Acessibilidade Digital. Programa de Cooperação entre Reino Unido e Brasil em Acesso Digital, 2023. Disponível em: [https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf](https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf). Acesso em: 17 Nov. 2025.
 
