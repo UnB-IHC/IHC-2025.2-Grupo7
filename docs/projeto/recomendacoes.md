@@ -64,7 +64,7 @@ Ferramenta online que realiza uma varredura automática no site e gera um relat�
 O ASES é uma ferramenta online desenvolvida pelo Governo Federal do Brasil que analisa automaticamente páginas web e gera um relatório de acessibilidade conforme os padrões nacionais e internacionais. Ele identifica erros, avisos e pontos críticos relacionados à navegação, leitura, estrutura e compatibilidade com tecnologias assistivas. Além disso, fornece explicações e sugestões de correção, ajudando a melhorar a experiência de pessoas com deficiência ao utilizar o site.
 
 ### Como usar:
-1. Acesse o site do ASES: [https://ases.acessibilidade.gov.br/](https://ases.acessibilidade.gov.br/)
+1. Acesse o site do ASES: [https://asesweb.governoeletronico.gov.br/](https://asesweb.governoeletronico.gov.br/)
 
 2. No campo principal, cole o link da página que deseja avaliar.
 
@@ -104,7 +104,7 @@ O ASES é uma ferramenta online desenvolvida pelo Governo Federal do Brasil que 
 ## 4. Lighthouse
 Ferramenta de auditoria integrada ao Chrome DevTools que avalia automaticamente vários aspectos de uma página, incluindo acessibilidade. Ela gera um relatório com pontuação, identifica problemas e oferece sugestões técnicas de melhoria. Pode ser executada diretamente no navegador ou por linha de comando, permitindo análises rápidas ou integrações em processos de desenvolvimento.
 
-Saiba mais: [https://developer.chrome.com/docs/lighthouse/overview?utm_source=chatgpt.com&hl=pt-br](https://developer.chrome.com/docs/lighthouse/overview?utm_source=chatgpt.com&hl=pt-br)
+Saiba mais: [https://developer.chrome.com/docs/lighthouse/overview?hl=pt-br](https://developer.chrome.com/docs/lighthouse/overview?hl=pt-br)
 
 ### Como usar:
 1. Abra a página no Chrome.
@@ -168,3 +168,11 @@ Saiba mais: [https://developer.chrome.com/docs/lighthouse/overview?utm_source=ch
 
 ## Considerações finais
 Essas ferramentas, quando utilizadas em conjunto, permitem uma avaliação eficiente e contribuem para a criação de sites mais acessíveis e inclusivos.
+
+# Referências Bibliograficas 
+
+**Governo Federal – Governo Digital.** Ferramentas de Acessibilidade Digital. Disponível em: <https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/ferramentas>. Acesso em: 03 dez. 2025.
+
+**Google – Chrome for Developers.** Documentação e Ferramentas para Desenvolvedores. Disponível em: <https://developer.chrome.com/.> Acesso em: 03 dez. 2025.
+
+
